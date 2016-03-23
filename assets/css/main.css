@@ -1,0 +1,139 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #272727;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+#particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #272727;
+  z-index: -1;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#author-name {
+  top: 42%;
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#title {
+  top: 20%;
+  color: #ffffff;
+}
+
+#title h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#title h2 {
+  font-size: 1.5em;
+}
+
+#go-back {
+  top: 40%;
+  color: #bababa;
+}
+
+#go-back a {
+  color: #bababa;
+  transition: color 200ms;
+}
+
+#go-back a:hover, #go-back a:active {
+  color: #ffffff;
+}
+
+#icon-links {
+  top: 47%;
+}
+
+.icon-link {
+  display: inline-block;
+  background-image: url("../images/link-icons.png");
+  background-repeat: no-repeat;
+  background-size: 160px 32px;
+  width: 32px;
+  height: 32px;
+}
+
+a.icon-link {
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+  opacity: 0.5;
+  transition: opacity 200ms;
+}
+
+a.icon-link:focus, a.icon-link:hover {
+  opacity: 1;
+}
+
+.icon-link.mail {
+  background-position: 0 0;
+}
+
+.icon-link.github {
+  background-position: -32px 0;
+}
+
+.icon-link.twitter {
+  background-position: -64px 0;
+}
+
+.icon-link.linkedin{
+  background-position: -96px 0;
+}
+
+.icon-link.blog {
+  background-position: -128px 0;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 1em;
+  color: #979797;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  .icon-link {
+    background-image: url("../images/link-icons@2x.png");
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    font-size: initial;
+  }
+
+  a.icon-link {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
